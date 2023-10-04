@@ -11,6 +11,7 @@ class ViewController2: UIViewController {
 
     var i1 : Int!
     
+    @IBOutlet weak var errorOutlet: UILabel!
     @IBOutlet weak var pointsOutlet: UILabel!
     
     override func viewDidLoad() {
@@ -26,7 +27,7 @@ class ViewController2: UIViewController {
             i1 = i1 - 5
         }else
         {
-            
+            errorOutlet.text = "NOT ENOUGH POINTS!"
         }
     }
     
