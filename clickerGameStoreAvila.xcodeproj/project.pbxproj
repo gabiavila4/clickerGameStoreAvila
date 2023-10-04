@@ -17,6 +17,7 @@
 		C87743152ACC5F5100719108 /* clickerGameStoreAvilaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87743142ACC5F5100719108 /* clickerGameStoreAvilaTests.swift */; };
 		C877431F2ACC5F5100719108 /* clickerGameStoreAvilaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C877431E2ACC5F5100719108 /* clickerGameStoreAvilaUITests.swift */; };
 		C87743212ACC5F5100719108 /* clickerGameStoreAvilaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87743202ACC5F5100719108 /* clickerGameStoreAvilaUITestsLaunchTests.swift */; };
+		C8C29A2D2ACD0D2E00883F28 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C29A2C2ACD0D2E00883F28 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		C877431A2ACC5F5100719108 /* clickerGameStoreAvilaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clickerGameStoreAvilaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C877431E2ACC5F5100719108 /* clickerGameStoreAvilaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clickerGameStoreAvilaUITests.swift; sourceTree = "<group>"; };
 		C87743202ACC5F5100719108 /* clickerGameStoreAvilaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clickerGameStoreAvilaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C8C29A252ACD0C4800883F28 /* clickerGameStoreAvila-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "clickerGameStoreAvila-Bridging-Header.h"; sourceTree = "<group>"; };
+		C8C29A2C2ACD0D2E00883F28 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 				C87743132ACC5F5100719108 /* clickerGameStoreAvilaTests */,
 				C877431D2ACC5F5100719108 /* clickerGameStoreAvilaUITests */,
 				C87742F82ACC5F4F00719108 /* Products */,
+				C8C29A252ACD0C4800883F28 /* clickerGameStoreAvila-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +108,7 @@
 				C87742FA2ACC5F4F00719108 /* AppDelegate.swift */,
 				C87742FC2ACC5F4F00719108 /* SceneDelegate.swift */,
 				C87742FE2ACC5F4F00719108 /* ViewController.swift */,
+				C8C29A2C2ACD0D2E00883F28 /* ViewController2.swift */,
 				C87743002ACC5F4F00719108 /* Main.storyboard */,
 				C87743062ACC5F5100719108 /* Assets.xcassets */,
 				C87743082ACC5F5100719108 /* LaunchScreen.storyboard */,
@@ -198,6 +203,7 @@
 				TargetAttributes = {
 					C87742F62ACC5F4F00719108 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1500;
 					};
 					C877430F2ACC5F5100719108 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -261,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8C29A2D2ACD0D2E00883F28 /* ViewController2.swift in Sources */,
 				C87742FF2ACC5F4F00719108 /* ViewController.swift in Sources */,
 				C87742FB2ACC5F4F00719108 /* AppDelegate.swift in Sources */,
 				C87742FD2ACC5F4F00719108 /* SceneDelegate.swift in Sources */,
@@ -439,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U4GPKHMJ2U;
@@ -457,6 +465,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = clc.clickerGameStoreAvila;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "clickerGameStoreAvila-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -467,6 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U4GPKHMJ2U;
@@ -485,6 +496,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = clc.clickerGameStoreAvila;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "clickerGameStoreAvila-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

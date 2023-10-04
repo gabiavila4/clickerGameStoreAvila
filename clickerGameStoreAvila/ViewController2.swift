@@ -9,21 +9,32 @@ import UIKit
 
 class ViewController2: UIViewController {
 
+    var i1 : Int!
+    
+    @IBOutlet weak var pointsOutlet: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        pointsOutlet.text = "Points: \(i1)"
+        
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func button1Action(_ sender: UIButton) {
+        if i1 >= 5
+        {
+            i1 = i1 - 5
+        }else
+        {
+            
+        }
     }
-    */
+    
+    @IBAction func button2Action(_ sender: UIButton) {
+        
+    }
+    
+    
 
+    
 }
