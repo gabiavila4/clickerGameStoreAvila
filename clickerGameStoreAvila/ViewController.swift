@@ -18,6 +18,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        pointsOutlet.text = "Points: \(clicks)"
+    }
     
     
     @IBAction func clickerAction(_ sender: UIButton) {
@@ -30,11 +33,13 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nvc = segue.destination as! ViewController2
         nvc.i1 = clicks
+        nvc.delegate = self
     }
     
     @IBAction func storeAction(_ sender: UIButton) {
         
         performSegue(withIdentifier: "toShop", sender: self)
+        //pointsOutlet.text = "Points: \(clicks)"
        
     }
     
