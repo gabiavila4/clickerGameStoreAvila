@@ -9,11 +9,14 @@ import UIKit
 
 class ViewController2: UIViewController {
 
+    var numCandy = 0
     var i1 : Int!
     weak var delegate : ViewController!
     
     @IBOutlet weak var errorOutlet: UILabel!
     @IBOutlet weak var pointsOutlet: UILabel!
+    
+    @IBOutlet weak var candyOutlet: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +35,8 @@ class ViewController2: UIViewController {
             errorOutlet.text = "NOT ENOUGH POINTS!"
         }
         delegate.clicks = i1
+        numCandy = numCandy + 1
+        candyOutlet.text = "# Candy: \(numCandy)"
     }
     
     @IBAction func button2Action(_ sender: UIButton) {
@@ -45,6 +50,8 @@ class ViewController2: UIViewController {
             errorOutlet.text = "NOT ENOUGH POINTS!"
         }
         delegate.clicks = i1
+        
+        
     }
     
     
