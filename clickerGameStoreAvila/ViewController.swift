@@ -28,6 +28,20 @@ class ViewController: UIViewController {
         print(clicks)
         pointsOutlet.text = "Points: \(clicks)"
         
+        if clicks == 100
+        {
+            let alert = UIAlertController(title: "Warning", message: "You have enough for a TOPHAT!", preferredStyle: .alert)
+            
+            let yesAction = UIAlertAction(title: "I need more points!", style: .default, handler: nil)
+            let noAction = UIAlertAction(title: "Ok I will go to the store now!", style: .default, handler: nil)
+           
+            alert.addAction(yesAction)
+            alert.addAction(noAction)
+           
+            present(alert, animated: true, completion: nil)
+
+        }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -37,6 +51,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func storeAction(_ sender: UIButton) {
+        
         
         performSegue(withIdentifier: "toShop", sender: self)
         //pointsOutlet.text = "Points: \(clicks)"

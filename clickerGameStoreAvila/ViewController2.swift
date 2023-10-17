@@ -33,6 +33,17 @@ class ViewController2: UIViewController {
         }else
         {
             errorOutlet.text = "NOT ENOUGH POINTS!"
+            
+            let alert = UIAlertController(title: "Error", message: "Not Enough Points", preferredStyle: .alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+           
+            alert.addAction(okAction)
+           
+            present(alert, animated: true, completion: nil)
+            
+            
+            
         }
         delegate.clicks = i1
         numCandy = numCandy + 1
@@ -48,6 +59,14 @@ class ViewController2: UIViewController {
         }else
         {
             errorOutlet.text = "NOT ENOUGH POINTS!"
+            
+            let alert2 = UIAlertController(title: "Error", message: "Not Enough Points", preferredStyle: .alert)
+            
+            let okAction2 = UIAlertAction(title: "OK", style: .default, handler: nil)
+           
+            alert2.addAction(okAction2)
+           
+            present(alert2, animated: true, completion: nil)
         }
         delegate.clicks = i1
         
